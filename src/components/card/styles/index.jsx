@@ -26,6 +26,7 @@ export const Image = styled.div`
     object-fit: cover;
   }
 `;
+
 export const Detail = styled.div`
   display: flex;
   flex-direction: column;
