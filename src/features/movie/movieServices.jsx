@@ -1,7 +1,7 @@
 import axios from "axios";
 import { tokenConfig } from "../tokenConfig";
 
-const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=86d2c299";
+const API_URL = "https://www.omdbapi.com/?i=tt3896198&apikey=86d2c299";
 
 // Get all Product
 const getMovies = async (values) => {

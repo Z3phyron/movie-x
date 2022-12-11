@@ -42,8 +42,8 @@ const Index = (props) => {
   const {movies} = props
     return (
       <Slider {...settings}>
-        {movies.map((item) => (
-          <Card movie={item} />
+        {movies.map((item, index) => (
+          <Card movie={item} key={index} />
         ))} 
       </Slider>
     );
