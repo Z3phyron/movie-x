@@ -4,27 +4,21 @@ import Search from "../components/search";
 import CategorySlide from "../components/categorySlide";
 import { useSelector } from "react-redux";
 
-
 const Index = () => {
   const { movies, series } = useSelector((state) => state.movie);
- 
-
-
-  
 
   return (
     <Container>
       <div className="showcase">
-        
         <div className="text">
           <h1>Watch Something Incredible</h1>
         </div>
       </div>
       <Search />
 
-      {movies && <CategorySlide movies={movies} category="Movies" />}
+      {movies <= 0 ? null : <CategorySlide movies={movies} category="Movies" />}
 
-      {series && <CategorySlide movies={series} category="Series" />}
+      {series <= 0 ? null : <CategorySlide movies={series} category="Series" />}
     </Container>
   );
 };
